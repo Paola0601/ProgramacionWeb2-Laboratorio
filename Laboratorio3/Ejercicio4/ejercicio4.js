@@ -11,7 +11,7 @@ function sacarCodigo(){
     const partes=link.split("/");
     const parteFinalLink=partes[partes.length-1];
     const codigoSemiFinal=parteFinalLink.split("?");
-    const codigo=partesCodigo[0];
+    const codigo=codigoSemiFinal[0];
  
     const codigoSinGuiones=sacarGuiones(codigo);
     return codigoSinGuiones;
