@@ -9,7 +9,7 @@
    
     });
 
-  
+  let numeros=[];
       
     function crearTabla()
     {const cantidad=parseInt(document.getElementById("cantidad").value);
@@ -17,7 +17,7 @@
      const tabla=document.createElement("table");
      const fila=document.createElement("tr");
       
-     let numeros=[];
+     numeros=[];
      for(let i=0;i<cantidad;i++)
      { const numero=Math.floor(Math.random()*100)+1;
       numeros.push(numero);
@@ -28,7 +28,7 @@
       tabla.appendChild(fila);
       contenidoDeLaTabla.appendChild(tabla);
 
-        calcularSuma();      
+        agregarBotonCalcularSuma();
     }; 
     
     
