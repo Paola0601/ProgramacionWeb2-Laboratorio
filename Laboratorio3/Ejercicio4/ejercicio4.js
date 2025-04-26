@@ -6,6 +6,7 @@
     formulario.addEventListener("submit", function(event) {
       event.preventDefault(); // Evitar el envío del formulario
       crearTabla();
+   
     });
 
   
@@ -27,15 +28,25 @@
       tabla.appendChild(fila);
       contenidoDeLaTabla.appendChild(tabla);
 
+        calcularSuma();      
     }; 
     
     
     
     function calcularSuma()
-    { };
+    { numeros=[];
+      let suma=0;
+      for(let i=0;i<numeros.length;i++)
+      {suma+=numeros[i];}
+      resultadoSuma.innerHTML="La suma es: "+suma;
+    }
+    function agregarBotonCalcularSuma()
+    { const botonCalcularSuma=document.createElement("button");
+      botonCalcularSuma.textContent="Calcular Suma";
+      botonCalcularSuma.addEventListener("click",calcularSuma);
+      contenidoDeLaTabla.appendChild(botonCalcularSuma);
+    };
     function mostrarResultado()
-    { };
-    function agregarBotonSumar()
     { };
     function limpiarTodo()
     {contenidoDeLaTabla.innerHTML="";
