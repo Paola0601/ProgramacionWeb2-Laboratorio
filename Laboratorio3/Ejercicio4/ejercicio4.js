@@ -14,4 +14,6 @@
     function agregarBotonSumar()
     { };
     function limpiarTodo()
-    { };
+    {contenidoDeLaTabla.innerHTML="";
+      resultadoSuma.innerHTML="";
+    };
