@@ -17,7 +17,6 @@
      const tabla=document.createElement("table");
      const fila=document.createElement("tr");
       
-     numeros=[];
      for(let i=0;i<cantidad;i++)
      { const numero=Math.floor(Math.random()*100)+1;
       numeros.push(numero);
@@ -34,7 +33,7 @@
     
     
     function calcularSuma()
-    { numeros=[];
+    { 
       let suma=0;
       for(let i=0;i<numeros.length;i++)
       {suma+=numeros[i];}
@@ -46,8 +45,7 @@
       botonCalcularSuma.addEventListener("click",calcularSuma);
       contenidoDeLaTabla.appendChild(botonCalcularSuma);
     };
-    function mostrarResultado()
-    { };
+  
     function limpiarTodo()
     {contenidoDeLaTabla.innerHTML="";
       resultadoSuma.innerHTML="";
