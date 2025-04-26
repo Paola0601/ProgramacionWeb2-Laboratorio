@@ -1,4 +1,4 @@
-const linkDelMeet=document.getElementById("linkMeet");
+const linkMeet=document.getElementById("linkMeet");
 const boton=document.getElementById("boton");
 boton.addEventListener("click", mostrarCodigo);
 
@@ -7,7 +7,7 @@ function mostrarCodigo(){
     document.getElementById("codigo").innerHTML = codigoFinal;
 }
 function sacarCodigo(){
-    link=linkDelMeet.textContent;
+    link=linkMeet.textContent;
     const partes=link.split("/");
     const parteFinalLink=partes[partes.length-1];
     const codigoSemiFinal=parteFinalLink.split("?");
