@@ -14,6 +14,7 @@
     function crearTabla()
     {
       limpiarTodo();
+      numeros = []; 
       const cantidad=parseInt(document.getElementById("cantidad").value);
        
      const tabla=document.createElement("table");
