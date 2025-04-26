@@ -6,7 +6,17 @@
   
       
     function crearTabla()
-    {};
+    {const cantidad=parseInt(document.getElementById("cantidad").value);
+       
+     const tabla=document.createElement("table");
+     const fila=document.createElement("tr");
+
+
+
+    }; 
+    
+    
+    
     function calcularSuma()
     { };
     function mostrarResultado()
