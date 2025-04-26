@@ -1,9 +1,10 @@
 
     const formulario = document.getElementById("formulario");
-    const contenidoDeLaTabla = document.getElementById("tablaContainer");
+    const contenidoDeLaTabla = document.getElementById("contenidoDeLaTabla");
     const resultadoSuma = document.getElementById("resultado");
 
     formulario.addEventListener("submit", function(event) {
+      event.preventDefault(); // Evitar el envío del formulario
       crearTabla();
     });
 
