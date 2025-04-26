@@ -9,7 +9,10 @@ function mostrarCodigo(){
 function sacarCodigo(){
     link=linkDelMeet.textContent;
     const partes=link.split("/");
-    const codigo=partes[partes.length-1];
+    const parteFinalLink=partes[partes.length-1];
+    const codigoSemiFinal=parteFinalLink.split("?");
+    const codigo=partesCodigo[0];
+ 
     const codigoSinGuiones=sacarGuiones(codigo);
     return codigoSinGuiones;
 }
