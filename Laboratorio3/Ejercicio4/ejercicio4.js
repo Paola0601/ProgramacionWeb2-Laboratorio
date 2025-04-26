@@ -1,8 +1,10 @@
 const linkDelMeet=document.getElementById("linkMeet");
 const boton=document.getElementById("boton");
-boton.addEventListener("click", mostrarLink);
+boton.addEventListener("click", mostrarCodigo);
 
-function mostrarLink(){
+function mostrarCodigo(){
+    const codigoFinal = sacarCodigo(); 
+    document.getElementById("codigo").innerHTML = codigoFinal;
 document.getElementById("codigo").innerHTML=codigoSinGuiones;}
 function sacarCodigo(){
     link=linkDelMeet.value;
