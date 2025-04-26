@@ -12,7 +12,9 @@
   let numeros=[];
       
     function crearTabla()
-    {const cantidad=parseInt(document.getElementById("cantidad").value);
+    {
+      limpiarTodo();
+      const cantidad=parseInt(document.getElementById("cantidad").value);
        
      const tabla=document.createElement("table");
      const fila=document.createElement("tr");
