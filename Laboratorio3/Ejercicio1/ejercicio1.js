@@ -1,2 +1,5 @@
 const fechaActual=new Date();
-document.getElementById("prueba").innerHTML=fechaActual.toLocaleDateString("es-ES", {year: "numeric", month: "2-digit", day: "2-digit"});
+const diaActual=fechaActual.getDay();
+const dias=["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"];
+const nombreDelDia=dias[diaActual];
+document.getElementById("prueba").innerHTML=nombreDelDia;
