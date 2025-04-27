@@ -1,18 +1,30 @@
 body {
     background-color: rgb(243, 88, 88);
+    font-family: 'Arial', sans-serif;
 }
 .problema{
     background-color:white;
-    font-size: 24px; 
-    font-family: Arial, sans-serif;
+    width:70%;
+    margin:0 auto;;
+    font-size: 30px; 
     text-align: center; 
     margin-bottom: 20px; 
     border-radius: 10px; 
-    color:rgb(76, 52, 57);
+    color:rgb(0, 0, 0);
 }
 .contenedor {
     width:70%;
+    font-size:60px;
+    margin: 0 auto;
+    background-color: white; 
+    padding: 4px; 
+    border-radius: 10px; 
+    text-align: center; 
+}
+#prueba,#texto,#enunciado{
+    width:70%;
     font-size:30px;
+    margin: 0 auto;
     background-color: white; 
     padding: 4px; 
     border-radius: 10px; 
@@ -26,7 +38,6 @@ h2 a {
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 20px;
-    font-family: Arial, sans-serif; 
     font-size: 18px; 
     font-weight: bold; 
     text-align: center; 
@@ -35,4 +46,21 @@ p {
     font-size: 18px; 
     line-height: 1.6; 
     margin: 10px 0; 
+    
+}
+#subtitulos {
+    width:20%;
+    
+    background-color: white;
+    color: rgb(215, 107, 107);
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 30px; 
+    font-weight: bold; 
+    text-align: center; 
+    margin: 0 auto;
+    margin-left: 15%; 
+    border: 2px solid rgb(225, 144, 144);
+
 }
