@@ -1,46 +1,59 @@
- const texto=getElementById("palabra");
+const inputTexto = document.getElementById("palabra");
+const boton = document.getElementById("boton");
+const divTexto = document.getElementById("texto");
+boton.addEventListener("click", mostrarBotones);
 
- const boton=document.getElementById("boton");
- boton.addEventListener("click", mostrarBotones);
 
-document.getElementById("demo").style.fontSize = "35px";
+function mostrarBotones() {
+    divTexto.textContent = inputTexto.value;
 
-mostrarBotones(){
-    botonAumeentarTamanio();
-    botonDisminuirTamanio();
-    botonCambiarColor();
+    // Creamos los  botones
+    crearBotonAumentarTamanio();
+    crearBotonDisminuirTamanio();
+    crearBotonCambiarColor();
 }
-botonAumentarTamanio(){
-    const botonAumentar=document.createElement("button");
-    botonAumentar.textContent="Aumentar Tamaño";
+
+
+function crearBotonAumentarTamanio() {
+    const botonAumentar = document.createElement("button");
+    botonAumentar.textContent = "Aumentar Tamaño";
     botonAumentar.addEventListener("click", aumentarTamanio);
     document.body.appendChild(botonAumentar);
 }
-botonDisminuirTamanio(){
-    const botonDisminuir=document.createElement("button");
-    botonDisminuir.textContent="Disminuir Tamaño";
+
+
+function crearBotonDisminuirTamanio() {
+    const botonDisminuir = document.createElement("button");
+    botonDisminuir.textContent = "Disminuir Tamaño";
     botonDisminuir.addEventListener("click", disminuirTamanio);
     document.body.appendChild(botonDisminuir);
 }
-botonCambiarColor(){
-    const botonCambiar=document.createElement("button");
-    botonCambiar.textContent="Cambiar Color";
+
+
+function crearBotonCambiarColor() {
+    const botonCambiar = document.createElement("button");
+    botonCambiar.textContent = "Cambiar Color";
     botonCambiar.addEventListener("click", cambiarColor);
     document.body.appendChild(botonCambiar);
 }
-disminuirTamanio(){
-    const texto=document.getElementById("texto");
-    let tamanioActual=window.getComputedStyle(texto).fontSize;
-    tamanioActual=parseFloat(tamanioActual);
-    texto.style.fontSize=(tamanioActual-2)+"px";
-}
-aumentarTamanio(){
-    const texto=document.getElementById("texto");
-    let tamanioActual=window.getComputedStyle(texto).fontSize;
-    tamanioActual=parseFloat(tamanioActual);
-    texto.style.fontSize=(tamanioActual+2)+"px";
-}
-cambiarColor(){
-    const texto=document.getElementById("texto");
 
+
+function aumentarTamanio() {
+    const estiloTexto = window.getComputedStyle(divTexto).fontSize;
+    const tamanioActual = parseFloat(estiloTexto);
+    divTexto.style.fontSize = (tamanioActual + 2) + "px";
+}
+
+
+function disminuirTamanio() {
+    const estiloTexto = window.getComputedStyle(divTexto).fontSize;
+    const tamanioActual = parseFloat(estiloTexto);
+    divTexto.style.fontSize = (tamanioActual - 2) + "px";
+}
+
+
+function cambiarColor() {
+    const colores = ["red", "blue", "green", "purple", "orange"];
+    const colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+    divTexto.style.color = colorAleatorio;
 }
