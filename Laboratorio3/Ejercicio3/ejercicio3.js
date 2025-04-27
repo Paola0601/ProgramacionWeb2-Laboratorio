@@ -9,4 +9,4 @@ if (aniversarioArequipa < fechaActual) {
 const tiempoFaltante = aniversarioArequipa - fechaActual;
 const diasFaltantes = Math.ceil(tiempoFaltante / (1000 * 60 * 60 * 24)); 
 
-document.getElementById("diasFaltantes").innerHTML = diasFaltantes;
+document.getElementById("diasFaltantes").innerHTML = diasFaltantes + " dias";
