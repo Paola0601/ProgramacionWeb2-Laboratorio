@@ -19,7 +19,8 @@ body {
     background-color: white; 
     padding: 4px; 
     border-radius: 10px; 
-    text-align: center; 
+    text-align: center;
+    color:rgb(215, 107, 107) 
 }
 #prueba,#texto,#enunciado{
     width:70%;
@@ -42,11 +43,22 @@ h2 a {
     font-weight: bold; 
     text-align: center; 
 }
+h2{
+    font-size: 30px;
+}
 p {
     font-size: 18px; 
     line-height: 1.6; 
     margin: 10px 0; 
     
+}
+#palabraInvertida {
+    background-color: rgb(215, 107, 107);
+    font-size: 30px; 
+    color: white;
+    text-align: center; 
+    margin-top: 10px; 
+    border-radius:20px;
 }
 .subtitulos {
     width:20%;
@@ -64,3 +76,32 @@ p {
     border: 2px solid rgb(225, 144, 144);
 
 }
+
+input#palabraIngresada {
+    width: 80%; 
+    font-size: 20px;
+    padding: 10px; 
+    border-radius: 10px; 
+    border: 2px solid rgb(215, 107, 107); 
+    margin-bottom: 10px; 
+}
+
+
+button#invertir {
+    font-size: 20px; 
+    padding: 10px 20px;
+    background-color: rgb(215, 107, 107);
+    color: white; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+}
+
+
+button#invertir:hover {
+    background-color: rgb(243, 88, 88); 
+}
+input#palabraIngresada:focus {
+    border: 2px solid rgb(243, 88, 88); 
+        outline: none; 
+    }
