@@ -9,7 +9,7 @@ boton.addEventListener("click", (event) => {
 
 function mostrarBotones() {
     divTexto.textContent = inputTexto.value;
-    eliminarBotones(); // Eliminar botones existentes antes de crear nuevos
+    eliminarBotones(); 
     crearBotonAumentarTamanio();
     crearBotonDisminuirTamanio();
     crearBotonCambiarColor();
@@ -23,7 +23,7 @@ function eliminarBotones() {
 function crearBotonAumentarTamanio() {
     const botonAumentar = document.createElement("button");
     botonAumentar.textContent = "Aumentar Tamaño";
-    botonAumentar.classList.add("boton-dinamico"); // Agregar clase para identificar botones dinámicos
+    botonAumentar.classList.add("boton-dinamico"); 
     botonAumentar.addEventListener("click", aumentarTamanio);
     document.body.appendChild(botonAumentar);
 }
@@ -31,7 +31,7 @@ function crearBotonAumentarTamanio() {
 function crearBotonDisminuirTamanio() {
     const botonDisminuir = document.createElement("button");
     botonDisminuir.textContent = "Disminuir Tamaño";
-    botonDisminuir.classList.add("boton-dinamico"); // Agregar clase para identificar botones dinámicos
+    botonDisminuir.classList.add("boton-dinamico"); 
     botonDisminuir.addEventListener("click", disminuirTamanio);
     document.body.appendChild(botonDisminuir);
 }
@@ -39,7 +39,7 @@ function crearBotonDisminuirTamanio() {
 function crearBotonCambiarColor() {
     const botonCambiar = document.createElement("button");
     botonCambiar.textContent = "Cambiar Color";
-    botonCambiar.classList.add("boton-dinamico"); // Agregar clase para identificar botones dinámicos
+    botonCambiar.classList.add("boton-dinamico"); 
     botonCambiar.addEventListener("click", cambiarColor);
     document.body.appendChild(botonCambiar);
 }
