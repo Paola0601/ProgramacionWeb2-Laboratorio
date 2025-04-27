@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <title>Calculadora de operaciones</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="ejercicio6b.js" defer></script>  
+
 </head>
 <body>
     <h1>Ejercicio6b</h1>
     <h2>Operaciones</h2>
-    <input type="number" id="numero1" placeholder="Primer valor">
+    <input type="number" id="numero1" placeholder="Primer valor" >
     <input type="number" id="numero2" placeholder="Segundo valor">
-    <select id="operation">
+    <select id="operacion">
         <option value="suma">Suma</option>
         <option value="resta">Resta</option>
         <option value="multiplicacion">Multiplicación</option>
@@ -24,7 +26,7 @@
         <option value="left_shift">Shift izquierda (<<)</option>
         <option value="right_shift">Shift derecha (>>)</option>
     </select>
-    <div class="result" id="result"></div>
+    <div class="resultado" id="resultado"></div>
 
     <button type ="button" id="boton">Calcular</button>
 </body>
