@@ -3,6 +3,11 @@ const boton = document.getElementById("boton");
 const divTexto = document.getElementById("texto");
 boton.addEventListener("click", mostrarBotones);
 
+boton.addEventListener("click", (event) => {
+    event.preventDefault(); 
+    mostrarBotones();
+});
+
 
 function mostrarBotones() {
     divTexto.textContent = inputTexto.value;
