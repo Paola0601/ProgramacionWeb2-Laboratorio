@@ -34,3 +34,13 @@ disminuirTamanio(){
     tamanioActual=parseFloat(tamanioActual);
     texto.style.fontSize=(tamanioActual-2)+"px";
 }
+aumentarTamanio(){
+    const texto=document.getElementById("texto");
+    let tamanioActual=window.getComputedStyle(texto).fontSize;
+    tamanioActual=parseFloat(tamanioActual);
+    texto.style.fontSize=(tamanioActual+2)+"px";
+}
+cambiarColor(){
+    const texto=document.getElementById("texto");
+
+}
