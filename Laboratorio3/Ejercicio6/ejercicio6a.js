@@ -1,7 +1,7 @@
 const inputTexto = document.getElementById("palabra");
 const boton = document.getElementById("boton");
 const divTexto = document.getElementById("texto");
-boton.addEventListener("click", mostrarBotones);
+
 
 boton.addEventListener("click", (event) => {
     event.preventDefault(); 
