@@ -23,25 +23,26 @@ function eliminarBotones() {
 function crearBotonAumentarTamanio() {
     const botonAumentar = document.createElement("button");
     botonAumentar.textContent = "Aumentar Tamaño";
-    botonAumentar.classList.add("boton-dinamico"); 
+    botonAumentar.classList.add("boton-dinamico", "boton");
     botonAumentar.addEventListener("click", aumentarTamanio);
-    document.body.appendChild(botonAumentar);
+    document.getElementById("botones-container").appendChild(botonAumentar);
 }
 
 function crearBotonDisminuirTamanio() {
     const botonDisminuir = document.createElement("button");
     botonDisminuir.textContent = "Disminuir Tamaño";
-    botonDisminuir.classList.add("boton-dinamico"); 
+    botonDisminuir.classList.add("boton-dinamico", "boton"); 
     botonDisminuir.addEventListener("click", disminuirTamanio);
-    document.body.appendChild(botonDisminuir);
+    document.getElementById("botones-container").appendChild(botonDisminuir);
 }
 
 function crearBotonCambiarColor() {
     const botonCambiar = document.createElement("button");
     botonCambiar.textContent = "Cambiar Color";
-    botonCambiar.classList.add("boton-dinamico"); 
+    botonCambiar.classList.add("boton-dinamico", "boton");
     botonCambiar.addEventListener("click", cambiarColor);
-    document.body.appendChild(botonCambiar);
+    document.getElementById("botones-container").appendChild(botonCambiar);
+
 }
 
 function aumentarTamanio() {
