@@ -6,39 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="ejercicio6b.js" defer></script>  
     <link rel="stylesheet" href="ejercicio6b.css">
-
 </head>
 <body>
-     <h2 ><a href="/index.html">Laboratorio 3</a></h2>
-        <h2 class="subtitulos">Ejercicio 6</h2>
-        <div class="problema">
-            <p id="enunciado">
-                Cree una página web con un texto y dos botones (al estilo del ejemplo del foco que se enciende y apaga) que permitan cambiar el tamaño de la letra de un texto, intente hacerlo también con los colores
-            </p>
-        </div>
-        <h2 class="subtitulos">Resultado</h2>
-    <div class="contenedor">
-    <h2>Calculadora de operaciones</h2>
-    <input class="numeroIngresado" type="number" id="numero1" placeholder="Primer valor" >
-    <input class="numeroIngresado" type="number" id="numero2" placeholder="Segundo valor">
-    <select class="numeroIngresado" id="operacion">
-        <option value="suma">Suma</option>
-        <option value="resta">Resta</option>
-        <option value="multiplicacion">Multiplicación</option>
-        <option value="division">División</option>
-        <option value="potencia">Potencia</option>
-        <option value="and">AND lógico (&&)</option>
-        <option value="or">OR lógico (||)</option>
-        <option value="bitwise_and">AND a nivel de bits (&)</option>
-        <option value="bitwise_or">OR a nivel de bits (|)</option>
-        <option value="bitwise_xor">XOR a nivel de bits (^)</option>
-        <option value="left_shift">Shift izquierda (<<)</option>
-        <option value="right_shift">Shift derecha (>>)</option>
-    </select>
-  
+    <h2><a href="/index.html">Laboratorio 3</a></h2>
+    <h2 class="subtitulos">Ejercicio 6</h2>
+    <div class="problema">
+        <p id="enunciado">
+          Cree una página web que permita realizar las operaciones aritmética, lógicas y de bits básicas, de manera dinámica( se podrá elegir cualquier operador) y se trabajará con dos argumentos.
+        </p>
+    </div>
 
-    <button type ="button" id="boton">Calcular</button>
-    <div class="resultado" id="resultado"></div>
+    <h2 class="subtitulos">Resultado</h2>
+
+    <div class="contenedor">
+        <h2>Calculadora de operaciones</h2>
+
+        <label for="numero1">Primer valor:</label>
+        <input class="numeroIngresado" type="number" id="numero1" placeholder="Primer valor">
+
+        <label for="numero2">Segundo valor:</label>
+        <input class="numeroIngresado" type="number" id="numero2" placeholder="Segundo valor">
+
+        <label for="operacion">Operación:</label>
+        <select class="numeroIngresado" id="operacion">
+            <option value="suma">Suma</option>
+            <option value="resta">Resta</option>
+            <option value="multiplicacion">Multiplicación</option>
+            <option value="division">División</option>
+            <option value="potencia">Potencia</option>
+            <option value="and">AND lógico (&&)</option>
+            <option value="or">OR lógico (||)</option>
+            <option value="bitwise_and">AND a nivel de bits (&)</option>
+            <option value="bitwise_or">OR a nivel de bits (|)</option>
+            <option value="bitwise_xor">XOR a nivel de bits (^)</option>
+            <option value="left_shift">Shift izquierda (<<)</option>
+            <option value="right_shift">Shift derecha (>>)</option>
+        </select>
+
+        <button type="button" id="boton">Calcular</button>
+        <div class="resultado" id="resultado"></div>
     </div>
 </body>
 </html>

@@ -12,7 +12,7 @@ body {
     margin-bottom: 20px;
     border-radius: 10px;
     color: #333;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    
 }
 
 .contenedor {
@@ -24,7 +24,7 @@ body {
     border-radius: 10px;
     text-align: center;
     color: #4a148c; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
 }
 
 #prueba, #texto, #enunciado {
@@ -35,7 +35,7 @@ body {
     padding: 4px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 h2 a {

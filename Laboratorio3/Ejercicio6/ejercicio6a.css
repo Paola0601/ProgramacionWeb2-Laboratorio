@@ -133,7 +133,7 @@ button.boton {
     margin: auto;
     font-size: 20px;
     padding: 10px 20px;
-    background-color: #311b92; 
+    background-color: #311b92; /* Color acorde con la paleta */
     color: white;
     border: none;
     border-radius: 10px;

@@ -1,5 +1,4 @@
 function calcular() {
-
     const numero1 = parseInt(document.getElementById('numero1').value);
     const numero2 = parseInt(document.getElementById('numero2').value);
     const operacion = document.getElementById('operacion').value;
@@ -25,10 +24,10 @@ function calcular() {
                 resultado = Math.pow(numero1, numero2);
                 break;
             case 'and':
-                resultado = (numero1 !== 0) && (numero2 !== 0);
+                resultado = (numero1 !== 0) && (numero2 !== 0) ? "true" : "false";
                 break;
             case 'or':
-                resultado = (numero1 !== 0) || (numero2 !== 0);
+                resultado = (numero1 !== 0) || (numero2 !== 0) ? "true" : "false";
                 break;
             case 'bitwise_and':
                 resultado = numero1 & numero2;
@@ -52,6 +51,5 @@ function calcular() {
 
     document.getElementById('resultado').innerText = "Resultado: " + resultado;
 }
-
 
 document.getElementById('boton').addEventListener('click', calcular);
