@@ -1,122 +1,150 @@
 body {
-    background-color: rgb(243, 88, 88);
+    background-color: #eef2f3; 
     font-family: 'Arial', sans-serif;
 }
-.problema{
-    background-color:white;
-    width:70%;
-    margin:0 auto;;
-    font-size: 30px; 
-    text-align: center; 
-    margin-bottom: 20px; 
-    border-radius: 10px; 
-    color:rgb(0, 0, 0);
-}
-.contenedor {
-    width:70%;
-    font-size:60px;
+
+.problema {
+    background-color: white;
+    width: 70%;
     margin: 0 auto;
-    background-color: white; 
-    padding: 4px; 
-    border-radius: 10px; 
+    font-size: 30px;
     text-align: center;
-    color:rgb(215, 107, 107) 
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: #333; 
 }
-#prueba,#texto,#enunciado{
-    width:70%;
-    font-size:30px;
+
+.contenedor {
+    width: 70%;
+    font-size: 60px;
     margin: 0 auto;
-    background-color: white; 
-    padding: 4px; 
-    border-radius: 10px; 
-    text-align: center; 
+    background-color: white;
+    padding: 4px;
+    border-radius: 10px;
+    text-align: center;
+    color: #4a148c;
+}
+
+#prueba, #texto, #enunciado {
+    width: 70%;
+    font-size: 30px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 4px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 h2 a {
-    display: inline-block; 
+    display: inline-block;
     background-color: white;
-    color: rgb(215, 107, 107);
+    color: #4a148c;  
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 20px;
-    font-size: 18px; 
-    font-weight: bold; 
-    text-align: center; 
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
 }
-h2{
+
+h2 {
     font-size: 30px;
 }
+
 p {
-    font-size: 18px; 
-    line-height: 1.6; 
-    margin: 10px 0; 
-    
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
 }
 
 .subtitulos {
-    width:20%;
-    
+    width: 20%;
     background-color: white;
-    color: rgb(215, 107, 107);
+    color: #4a148c;
     text-decoration: none;
     padding: 10px 10px;
     border-radius: 20px;
-    font-size: 30px; 
-    font-weight: bold; 
-    text-align: center; 
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
     margin: 0 auto;
-    margin-left: 15%; 
-    border: 2px solid rgb(225, 144, 144);
-
+    margin-left: 15%;
+    border: 2px solid #d1c4e9;
 }
-.texto{
+
+.texto {
     font-size: 30px;
 }
 
+#resultado {
+    width: 20%;
+    background-color: #4a148c;  
+    color: white;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto;
+    margin-left: 39%;
+    border: none;
+}
+
+.imagen img {
+    display: block;
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 60px;
+}
 
 button#boton {
-    font-size: 20px; 
+    font-size: 20px;
     padding: 10px 20px;
-    background-color: rgb(215, 107, 107);
-    color: white; 
-    border: none; 
-    border-radius: 10px; 
-    cursor: pointer; 
+     background-color: #311b92; 
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button#boton:hover, button#sumar:hover {
+    background-color:  rgb(107, 50, 173); 
 }
 
 
-button#boton:hover {
-    background-color: rgb(243, 88, 88); 
-}
+
 input#palabra {
-    width: 50%; 
+    width: 50%;
     font-size: 18px;
-    padding: 10px; 
-    border: 2px solid rgb(215, 107, 107); 
-    border-radius: 10px; 
-    outline: none; 
-    margin: 10px 0; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    padding: 10px;
+    border: 2px solid #4a148c;
+    border-radius: 10px;
+    outline: none;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 input#palabra:focus {
-    border-color: rgb(243, 88, 88); 
-    box-shadow: 0 0 10px rgba(243, 88, 88, 0.5); 
+    border-color: #311b92;
+    box-shadow: 0 0 10px rgba(49, 27, 146, 0.5); 
 }
+
 button.boton {
-    margin :auto;
-    font-size: 20px; 
+    margin: auto;
+    font-size: 20px;
     padding: 10px 20px;
-    background-color:   rgb(243, 88, 88);
-    color:  white; 
-    border: none; 
-    border-radius: 10px; 
-    cursor: pointer; 
+    background-color: #311b92; 
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 button.boton:hover {
-    background-color: rgb(243, 88, 88); 
+    background-color: rgb(107, 50, 173);
+
 }
+
 .botones-container {
     display: flex;
     justify-content: center;

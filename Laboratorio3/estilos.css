@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f3;
+    text-align: center;
+}
+
+.contenedor {
+    padding: 20px;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.lista-ejercicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.lista-ejercicios h2 {
+    margin: 0;
+}
+
+.lista-ejercicios a {
+    text-decoration: none;
+    color: #4a148c;
+    background-color: white;
+    padding: 15px 30px;
+    display: inline-block;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra suave */
+    transition: all 0.3s ease;
+    width: 250px;
+}
+
+.lista-ejercicios a:hover {
+    background-color: #d1c4e9;
+    color: #311b92;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Sombra más grande al pasar el mouse */
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #4a148c;
+    color: white;
+    font-size: 14px;
+}

@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(243, 88, 88);
+    background-color: #eef2f3; 
     font-family: 'Arial', sans-serif;
 }
 .problema{
@@ -20,7 +20,7 @@ body {
     padding: 4px; 
     border-radius: 10px; 
     text-align: center;
-    color:rgb(215, 107, 107) 
+    color: #4a148c; 
 }
 #prueba,#texto,#enunciado{
     width:70%;
@@ -35,7 +35,7 @@ body {
 h2 a {
     display: inline-block; 
     background-color: white;
-    color: rgb(215, 107, 107);
+    color: #4a148c; 
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 20px;
@@ -57,7 +57,7 @@ p {
     width:20%;
     
     background-color: white;
-    color: rgb(215, 107, 107);
+    color: #4a148c;
     text-decoration: none;
     padding: 10px 10px;
     border-radius: 20px;
@@ -66,7 +66,7 @@ p {
     text-align: center; 
     margin: 0 auto;
     margin-left: 15%; 
-    border: 2px solid rgb(225, 144, 144);
+    border: 2px solid #d1c4e9;
 
 }
 .texto{
@@ -77,7 +77,7 @@ p {
 button#boton {
     font-size: 20px; 
     padding: 10px 20px;
-    background-color: rgb(215, 107, 107);
+    background-color: #4a148c; 
     color: white; 
     border: none; 
     border-radius: 10px; 
@@ -86,13 +86,13 @@ button#boton {
 
 
 button#boton:hover {
-    background-color: rgb(243, 88, 88); 
+    background-color: #311b92; 
 }
 .numeroIngresado {
     width: 25%; 
     font-size: 18px;
     padding: 10px; 
-    border: 2px solid rgb(215, 107, 107); 
+    border: 2px solid #d1c4e9; 
     border-radius: 10px; 
     outline: none; 
     margin: 10px 0; 
@@ -100,13 +100,13 @@ button#boton:hover {
 }
 
 .numeroIngresado:focus {
-    border-color: rgb(243, 88, 88); 
-    box-shadow: 0 0 10px rgba(243, 88, 88, 0.5); 
+    background-color:white; 
+    box-shadow: 0 0 10px rgba(184, 77, 237, 0.5); 
 }
 #resultado{
 
     width:20%;
-    background-color:  rgb(215, 107, 107);
+    background-color: #311b92; 
     color: white;
     padding: 10px 10px;
     border-radius: 20px;
@@ -121,7 +121,7 @@ button.boton {
     margin :auto;
     font-size: 20px; 
     padding: 10px 20px;
-    background-color:   rgb(243, 88, 88);
+    background-color: #311b92; 
     color:  white; 
     border: none; 
     border-radius: 10px; 
@@ -129,7 +129,7 @@ button.boton {
 }
 
 button.boton:hover {
-    background-color: rgb(243, 88, 88); 
+    background-color: #311b92; 
 }
 .botones-container {
     display: flex;
