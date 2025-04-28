@@ -1,0 +1,139 @@
+body {
+    background-color: rgb(243, 88, 88);
+    font-family: 'Arial', sans-serif;
+}
+.problema{
+    background-color:white;
+    width:70%;
+    margin:0 auto;;
+    font-size: 30px; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    border-radius: 10px; 
+    color:rgb(0, 0, 0);
+}
+.contenedor {
+    width:70%;
+    font-size:60px;
+    margin: 0 auto;
+    background-color: white; 
+    padding: 4px; 
+    border-radius: 10px; 
+    text-align: center;
+    color:rgb(215, 107, 107) 
+}
+#prueba,#texto,#enunciado{
+    width:70%;
+    font-size:30px;
+    margin: 0 auto;
+    background-color: white; 
+    padding: 4px; 
+    border-radius: 10px; 
+    text-align: center; 
+}
+
+h2 a {
+    display: inline-block; 
+    background-color: white;
+    color: rgb(215, 107, 107);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px; 
+    font-weight: bold; 
+    text-align: center; 
+}
+h2{
+    font-size: 50px;
+}
+p {
+    font-size: 18px; 
+    line-height: 1.6; 
+    margin: 10px 0; 
+    
+}
+
+.subtitulos {
+    width:20%;
+    
+    background-color: white;
+    color: rgb(215, 107, 107);
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 30px; 
+    font-weight: bold; 
+    text-align: center; 
+    margin: 0 auto;
+    margin-left: 15%; 
+    border: 2px solid rgb(225, 144, 144);
+
+}
+.texto{
+    font-size: 30px;
+}
+
+
+button#boton {
+    font-size: 20px; 
+    padding: 10px 20px;
+    background-color: rgb(215, 107, 107);
+    color: white; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+}
+
+
+button#boton:hover {
+    background-color: rgb(243, 88, 88); 
+}
+.numeroIngresado {
+    width: 25%; 
+    font-size: 18px;
+    padding: 10px; 
+    border: 2px solid rgb(215, 107, 107); 
+    border-radius: 10px; 
+    outline: none; 
+    margin: 10px 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.numeroIngresado:focus {
+    border-color: rgb(243, 88, 88); 
+    box-shadow: 0 0 10px rgba(243, 88, 88, 0.5); 
+}
+#resultado{
+
+    width:20%;
+    background-color:  rgb(215, 107, 107);
+    color: white;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 25px; 
+    font-weight: bold; 
+    text-align: center; 
+    margin: 10px auto;
+    margin-left: 39%; 
+    border: none;
+}
+button.boton {
+    margin :auto;
+    font-size: 20px; 
+    padding: 10px 20px;
+    background-color:   rgb(243, 88, 88);
+    color:  white; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+}
+
+button.boton:hover {
+    background-color: rgb(243, 88, 88); 
+}
+.botones-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
