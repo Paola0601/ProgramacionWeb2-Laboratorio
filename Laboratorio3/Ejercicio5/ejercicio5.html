@@ -4,18 +4,32 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ejercicio 4</title>
-        <link rel="stylesheet" href="/styles.css">
+        <link rel="stylesheet" href="ejercicio5.css">
         <script src="ejercicio5.js" defer></script>
     </head>
     <body>
-        <h1>Ejercicio 4</h1>
+
+        <h2 ><a href="/index.html">Laboratorio 3</a></h2>
+        <h2 class="subtitulos">Ejercicio 5</h2>
+        <div class="problema">
+            <p id="enunciado">
+                Escribir una página que permita calcular la suma de todos los valores de una tabla de valores dinámica. La idea es crear una página web con un formulario que te permita decir cuantos valores tendrá la tabla, luego, al enviar el formulario la tabla se debe crear dinámica y aleatoriamente, junto con otro botón de envió para calcular la suma
+            </p>
+        </div>
+        <h2 class="subtitulos">Resultado</h2>
+        <div class="contenedor">
+            
         <h2>Tabla dinamica </h2>
+        <div class="imagen">
+            <img src="tabla.png" alt="Arequipa">
+       </div>
         <form id="formulario">
-            <label for="cantidad">Ingrese la cantidad de valores de la tabla</label>
+            <label  for="cantidad">Ingrese la cantidad de valores de la tabla:  </label>
             <input type="number" id="cantidad" min="1" required>
-            <button type="submit">Crear Tabla</button>
+            <button id="boton" type="submit">Crear Tabla</button>
           </form>
           <div id="contenidoDeLaTabla"></div>
           <div id="resultado"></div>
+        </div>
     </body>
 </html>
