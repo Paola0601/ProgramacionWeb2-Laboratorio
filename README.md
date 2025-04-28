@@ -2,6 +2,7 @@
 **Nombre:** Paola Adamari Mayta Quispe  
 **Curso:** Programación Web II - Laboratorio A  
 **Docente:** Carlo Jose Luis Corrales Delgado
+
 **Universidad:** Universidad Nacional de San Agustín de Arequipa  
 **Año:** Segundo Año  
 
