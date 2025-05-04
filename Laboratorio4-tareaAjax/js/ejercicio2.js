@@ -10,13 +10,11 @@ document.addEventListener("DOMContentLoaded", function() {
              
                
             datosDeDataJson.forEach(regiones =>{
-              let nombre=datosDeDataJson.region;
+              let nombre=regiones.region;
               let fechaCantidad=regiones.confirmed;
               let casosTotales=fechaCantidad.reduce((total,fecha) =>
-                 total+fecha,0);
-            });
+              total+parseInt(fecha.value), 0);
                             
-            
               const li = document.createElement("li");
               li.textContent = nombre+casosTotales;
               listaRegiones.appendChild(li);
