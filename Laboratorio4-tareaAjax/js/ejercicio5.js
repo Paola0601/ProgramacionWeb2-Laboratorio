@@ -27,8 +27,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       }
     });
-
-
+const encabezado=["Fecha", ...regionesAcomparar];
+const datosComparacion=[encabezado];
+Array.from(fechas.values()).forEach(fila => {
+    const filaCompleta = [fila.fecha];
+    regionesSeleccionadas.forEach(nombre => {
+      filaCompleta.push(fila[nombre] || 0);
+    });
+    dataArray.push(filaCompleta);
+  });
 
 
 }
