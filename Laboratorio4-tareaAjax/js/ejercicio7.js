@@ -1,6 +1,10 @@
 google.charts.load("current", { packages: ["corechart"] });
 
 document.addEventListener("DOMContentLoaded", function () {
+  const select1 = document.getElementById("region1");
+  const select2 = document.getElementById("region2");
+  const boton = document.getElementById("btnMostrar");
+  const contenedorGrafico = document.getElementById("grafico-usuario");
   fetch("data.json")
     .then(respuesta => {
       if (!respuesta.ok) {
