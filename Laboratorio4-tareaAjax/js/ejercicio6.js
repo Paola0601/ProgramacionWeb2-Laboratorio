@@ -39,17 +39,16 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         dataArray.push(filaCompleta);
       });
-      
+
       google.charts.setOnLoadCallback(function () {
         const data = google.visualization.arrayToDataTable(dataArray);
-
         const options = {
-          title: "Comparación de regiones (casos diarios confirmados)",
+          title: "Crecimiento de casos confirmados (excluyendo Lima y Callao)",
           curveType: "function",
           legend: { position: "bottom" }
         };
 
-        const chart = new google.visualization.LineChart(document.getElementById("grafico-comparativo"));
+        const chart = new google.visualization.LineChart(document.getElementById("grafico-sin-lima-callao"));
         chart.draw(data, options);
       });
     })
