@@ -37,6 +37,17 @@ Array.from(fechas.values()).forEach(fila => {
     dataArray.push(filaCompleta);
   });
 
+  google.charts.setOnLoadCallback(function () {
+    const data = google.visualization.arrayToDataTable(dataArray);
+    const options = {
+      title: "Comparación de regiones (casos diarios confirmados)",
+      curveType: "function",
+      legend: { position: "bottom" }
+    };
+    const chart = new google.visualization.LineChart(document.getElementById("grafico-comparativo"));
+    chart.draw(data, options);
+  });
+})
 
 }
  });
