@@ -9,25 +9,24 @@ document.addEventListener("DOMContentLoaded", function () {
       return respuesta.json();
     })
     .then(datos => {
-      const regionesSeleccionadas = ["Arequipa", "Puno", "Piura"];
+        const regionesFiltradas = datos.filter(region => region.region !== "Lima" && region.region !== "Callao");
+
       const fechasMap = new Map();
 
-      regionesSeleccionadas.forEach(nombreRegion => {
-        const regionDatos = datos.find(r => r.region === nombreRegion);
+      
+      regionesFiltradas.forEach(region => {
+        region.confirmed.forEach(dia => {
+          const fecha = dia.date;
+          const casos = parseInt(dia.value);
 
-        if (regionDatos) {
-          regionDatos.confirmed.forEach(fechaRegion => {
-            const fecha = fechaRegion.date;
-            const casos = parseInt(fechaRegion.value);
+          if (!fechasMap.has(fecha)) {
+            fechasMap.set(fecha, { fecha });
+          }
 
-            if (!fechasMap.has(fecha)) {
-              fechasMap.set(fecha, { fecha });
-            }
-
-            fechasMap.get(fecha)[nombreRegion] = casos;
-          });
-        }
+          fechasMap.get(fecha)[region.region] = casos;
+        });
       });
+
 
       const encabezado = ["Fecha", ...regionesSeleccionadas];
       const dataArray = [encabezado];
