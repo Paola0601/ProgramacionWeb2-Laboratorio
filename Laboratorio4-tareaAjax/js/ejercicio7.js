@@ -29,6 +29,34 @@ document.addEventListener("DOMContentLoaded", function () {
         
       });
     });
+    boton.addEventListener("click", function () {
+      const regionA = select1.value;
+      const regionB = select2.value;
+  
+      if (regionA === regionB) {
+        contenedorGrafico.innerText = "Seleccione dos regiones diferentes.";
+        return;
+      }
+  
+      const seleccionadas = [regionA, regionB];
+      const fechasMap = new Map();
+  
+      seleccionadas.forEach(nombreRegion => {
+        const region = datosGlobales.find(regiones => regiones.region === nombreRegion);
+  
+        if (region) {
+          region.confirmed.forEach(dia => {
+            const fecha = dia.date;
+            const casos = parseInt(dia.value);
+  
+            if (!fechasMap.has(fecha)) {
+              fechasMap.set(fecha, { fecha });
+            }
+  
+            fechasMap.get(fecha)[nombreRegion] = casos;
+          });
+        }
+      });
 
       const nombresRegiones = regionesFiltradas.map(r => r.region);
       const encabezado = ["Fecha", ...nombresRegiones];
