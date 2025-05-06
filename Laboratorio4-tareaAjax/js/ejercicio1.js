@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function() {
     const listaRegiones=document.getElementById("Lista_de_regiones");
     const peticion = new XMLHttpRequest();

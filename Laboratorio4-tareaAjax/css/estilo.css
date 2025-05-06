@@ -1,0 +1,98 @@
+body {
+    background-color: #eef2f3; 
+    font-family: 'Arial', sans-serif;
+}
+
+.problema {
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: #333;
+}
+
+.contenedor {
+    width: 70%;
+    font-size: 60px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 4px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#prueba, #texto, #enunciado {
+    width: 70%;
+    font-size: 30px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 4px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h2 a {
+    display: inline-block;
+    background-color: white;
+    color: #4a148c; 
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+h2 a:hover {
+    background-color: #d1c4e9; 
+    color: #311b92; 
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.subtitulos {
+    width: 20%;
+    background-color: white;
+    color: #4a148c; 
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 15%;
+    border: 2px solid #d1c4e9; 
+}
+
+#Lista_de_regiones{
+    font-size:20px;
+}
+li{
+    font-size:20px;
+    list-style-type: none;
+}
+h1{
+    font-size:20px;
+}
+.contenedor label{
+    
+    color: #4a148c; 
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 15%;
+    border: 2px solid #d1c4e9;
+}
