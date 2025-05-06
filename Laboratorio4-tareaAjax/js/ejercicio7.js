@@ -13,24 +13,22 @@ document.addEventListener("DOMContentLoaded", function () {
       return respuesta.json();
     })
     .then(datos => {
-        const regionesFiltradas = datos.filter(region => region.region !== "Lima" && region.region !== "Callao");
 
-      const fechasMap = new Map();
+      datosGlobales = datos;
 
-      
-      regionesFiltradas.forEach(region => {
-        region.confirmed.forEach(dia => {
-          const fecha = dia.date;
-          const casos = parseInt(dia.value);
+      datos.forEach(region => {
 
-          if (!fechasMap.has(fecha)) {
-            fechasMap.set(fecha, { fecha });
-          }
+          const option1 = document.createElement("option");
+          const option2 = document.createElement("option");
 
-          fechasMap.get(fecha)[region.region] = casos;
-        });
+          option1.value = option1.textContent = region.region;
+          option2.value = option2.textContent = region.region;
+
+          select1.appendChild(option1);
+          select2.appendChild(option2);
+        
       });
-
+    });
 
       const nombresRegiones = regionesFiltradas.map(r => r.region);
       const encabezado = ["Fecha", ...nombresRegiones];
@@ -60,4 +58,5 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("grafico-comparativo").innerText = error.message;
     });
 });
+
 
