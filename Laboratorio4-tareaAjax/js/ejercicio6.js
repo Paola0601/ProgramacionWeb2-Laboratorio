@@ -28,17 +28,18 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
 
-      const encabezado = ["Fecha", ...regionesSeleccionadas];
+      const nombresRegiones = regionesFiltradas.map(r => r.region);
+      const encabezado = ["Fecha", ...nombresRegiones];
       const dataArray = [encabezado];
 
       Array.from(fechasMap.values()).forEach(fila => {
         const filaCompleta = [fila.fecha];
-        regionesSeleccionadas.forEach(nombre => {
+        nombresRegiones.forEach(nombre => {
           filaCompleta.push(fila[nombre] || 0);
         });
         dataArray.push(filaCompleta);
       });
-
+      
       google.charts.setOnLoadCallback(function () {
         const data = google.visualization.arrayToDataTable(dataArray);
 
