@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
       return respuesta.json();
     })
     .then(datos => {
-        const regionesFiltradas = datos.filter(region => region.region !== "Lima" && region.region !== "Callao");
+    const regionesFiltradas = datos.filter(region => region.region !== "Lima" && region.region !== "Callao");
 
       const fechasMap = new Map();
 

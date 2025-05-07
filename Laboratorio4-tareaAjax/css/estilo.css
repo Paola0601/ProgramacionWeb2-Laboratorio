@@ -96,3 +96,19 @@ h1{
     margin-left: 15%;
     border: 2px solid #d1c4e9;
 }
+.contenedor solucion {
+    width: 70%;
+    font-size: 20px; 
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.ejercicio2{
+    font-size: 30px;
+}
+#Top-10{
+    font-size: 30px;
+    list-style-type:circle;
+}
