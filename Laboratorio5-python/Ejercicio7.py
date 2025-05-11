@@ -25,7 +25,8 @@ filaBlanco=empiezaBlanco.horizontalRepeat(4)
 unionFilas = filaNegro.up(filaBlanco)
 #Repetimos la union de filas 2 veces
 mitadTablero = unionFilas.verticalRepeat(2)
-draw(fichasCompletas)
+unimosFichasyTablero=mitadTablero.under(fichasCompletas)
+draw(unimosFichasyTablero)
 
 
 #under
