@@ -26,7 +26,8 @@ unionFilas = filaNegro.up(filaBlanco)
 #Repetimos la union de filas 2 veces
 mitadTablero = unionFilas.verticalRepeat(2)
 unimosFichasyTablero=unionFilas.up(mitadTablero.under(fichasCompletas))
-draw(unimosFichasyTablero)
+tableroFinal=unimosFichasyTablero.horizontalMirror()
+draw(tableroFinal)
 
 
 #under
