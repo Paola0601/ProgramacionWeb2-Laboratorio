@@ -9,6 +9,8 @@ filaPeonesBlancos=pawn.horizontalRepeat(8)
 #CReamos fila de piezas negras y blancas 
 filaPiezasBlanco=rock.join(knight).join(bishop).join(queen).join(king).join(bishop).join(knight).join(rock)
 filaPiezasNegro=filaPiezasBlanco.negative()
+#unimos los peones con las otras fichas de su mismo color
+fichasCompletas=filaPeonesNegros.up(filaPiezasNegro)
 #Creamos una  fila de cuadrados que tenga blanco y negro
 empiezaNegro= cuadriculaNegra.join(square)
 
@@ -23,7 +25,7 @@ filaBlanco=empiezaBlanco.horizontalRepeat(4)
 unionFilas = filaNegro.up(filaBlanco)
 #Repetimos la union de filas 2 veces
 mitadTablero = unionFilas.verticalRepeat(2)
-draw(filaPiezasNegro)
+draw(fichasCompletas)
 
 
 #under
