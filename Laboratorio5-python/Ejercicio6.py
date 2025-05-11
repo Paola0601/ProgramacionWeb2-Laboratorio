@@ -13,5 +13,8 @@ empiezaBlanco = square.join(cuadriculaNegra)
 
 #Creamos una fila de 8 cuadrados, repitiendo filaBase 4 veces
 filaBlanco=empiezaBlanco.horizontalRepeat(4)
-
-draw(filaNegro)
+#Juntamos las filas para hacer el tablero
+unionFilas = filaNegro.up(filaBlanco)
+#Repetimos la union de filas 2 veces
+mitadTablero = unionFilas.verticalRepeat(2)
+draw(mitadTablero)
