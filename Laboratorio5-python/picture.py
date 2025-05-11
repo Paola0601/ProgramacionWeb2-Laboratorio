@@ -35,7 +35,9 @@ class Picture:
         
 
   def up(self, p):
-    return Picture(None)
+    """ Devuelve una nueva figura poniendo la figura recibida como argumento, encima de la figura actual
+    """
+    return Picture(p.img + self.img)
 
   def under(self, p):
     """ Devuelve una nueva figura poniendo la figura p sobre la
