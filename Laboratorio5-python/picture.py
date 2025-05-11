@@ -30,7 +30,9 @@ class Picture:
   def join(self, p):
     """ Devuelve una nueva figura poniendo la figura del argumento 
         al lado derecho de la figura actual """
-    return Picture(None)
+    nueva_img=[fila1+fila2 for fila1,fila2 in zip(self.img,p.img)]
+    return Picture(nueva_img)
+        
 
   def up(self, p):
     return Picture(None)
