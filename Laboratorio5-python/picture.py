@@ -27,6 +27,7 @@ class Picture:
           nueva_fila=''.join([self._invColor(color) for color in fila])
           nueva_img.append(nueva_fila)
     return Picture(nueva_img)
+  
   def join(self, p):
     """ Devuelve una nueva figura poniendo la figura del argumento 
         al lado derecho de la figura actual """
@@ -42,10 +43,10 @@ class Picture:
   def under(self, p):
     """ Devuelve una nueva figura poniendo la figura p sobre la
         figura actual """
-    nueva_img=[]
-    for fila1,fila2 in zip(self.img,p.img):
-      nueva_fila=''.join([color1+color2 for color1,color2 in zip(fila1,fila2)])
-      nueva_img.append(nueva_fila)
+    nueva_img = []
+    for fila1, fila2 in zip(self.img, p.img):
+        nueva_fila = ''.join([caracterSuperior if caracterSuperior != ' ' else caracterInferior for caracterInferior, caracterSuperior in zip(fila1, fila2)])
+        nueva_img.append(nueva_fila)
     return Picture(nueva_img)
   
   def horizontalRepeat(self, n):
