@@ -3,16 +3,15 @@ from chessPictures import *
 from interpreter import draw
 from chessPictures import knight
 
-#creamos un caballo negro
+#Creamos un caballo negro
 caballo_negro = knight.negative()
 
 # Primera fila: creamos un caballo y con el metodo join 
-#ponemos a su costado, con el metodo join el caballo negro
+#ponemos a su costado el caballo negro
 fila1 = knight.join(caballo_negro)
 
-# Segunda fila: Hamos lo mismo que en el anterior 
-#pero enest caso es caballo negro y luego el cabalo blaco
-fila2 = caballo_negro.join(knight)
+# Segunda fila:invertimos la primera fila
+fila2=fila1.verticalMirror()
 
 # Figura final: fila2 debajo de fila1
 figura = fila2.up(fila1)
