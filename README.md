@@ -11,9 +11,11 @@ Este repositorio contiene los laboratorios y prácticas desarrolladas durante el
 # Laboratorios
 ## Laboratorio 3 
   Laboratorio de java script 
+  Commits:
 ## Laboratorio 4
   Laboratorio de nodejs con google charts
+  Commits:
 ## Laboratorio 5
   Laboratorio con python:Dibujar el grafico del ajedrez 
-
+  Commits:
 
